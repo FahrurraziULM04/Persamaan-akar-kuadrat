@@ -1,0 +1,48 @@
+<html>
+<head>
+	<script>
+		var a,b,c;
+			a = 4;
+			b = 4;
+			c = 1;
+				var des;
+				
+					var deskriminan = (Math.pow(b,2)) - (4 * a * c);	
+					
+							if ( deskriminan > 0 ) 			{	     
+														
+								var x1 = (-b + Math.sqrt(deskriminan))/(2*a);  
+								
+										var y1 = (-b - Math.sqrt(deskriminan))/(2*a); 
+										
+												hasil = "hasil akhirnya adalah" + " " +x1.toPrecision(1) + " " +"atau" + " " + y1.toPrecision(1) + " "+"akar real"+" , "; 
+												
+															  }
+															  
+													else if (deskriminan == 0 ) {
+													
+																					x1 = y1 = -b / (2 * a) ; 
+																					
+																						document.write(hasil = "hasil akhirnya adalah" + " " +x1.toPrecision(1) + " " +"atau" + " " + y1.toPrecision(1) + " "+"akar kembar"+" , "); 
+																						
+																		        }
+
+																		else if (deskriminan < 0) {       								
+																		
+																						  document.write(hasil="termasuk akar imajiner "+" , ");
+																						
+																				}
+																		
+																			else {                                
+																			
+																					document.write(hasil = "tidak memiliki akar"+" , ") ;
+																					
+																				}
+																				
+																				document.write(des = "nilai diskriminan nya adalah" + " " + deskriminan.toFixed(0)); 
+																				
+	</script>
+</head>
+ <body>
+ </body>
+</html>

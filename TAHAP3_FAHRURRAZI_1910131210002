@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name    = "viewport" content="width = device-width,initial-scale = 1">
+		<title>akar kuadrat</title>
+		<style>
+			body 
+			{
+				background-color : #52A7CC ;
+			}
+			#kotak
+			{
+				position: relative;
+				top: 80px;
+				width:250px;
+				height:280px;
+				background:#A5D4DC ;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+	<body>
+	<center>
+	<h1 style=""> Program Perhitungan Kuadrat</h1>
+	<div id="kotak">
+		<br>
+		<br>
+		<font align="center" color="white">masukan nilai a</font>
+		<input type="text" id="a" required>
+		<br>
+		<br>
+		<font align="center" color="white">masukan nilai b</font>
+		<input type="text" id="b" required>
+		<br>
+		<br>
+		<font align="center" color="white">masukan nilai c</font>
+		<input type="text" id="c" required>
+		<br>
+		<br>
+		<button onclick="input()">submit</button>
+		<button onclick="reset()">reset</button>
+		<br>
+		<br>
+		
+		<script src="panggil.js"></script>
+		<script src="input.js"></script>
+	</div>
+	<center>
+	</body>
+</html>
